@@ -16,14 +16,20 @@ Como ejercicio adicional y completamente opcional, al terminar de resolver este 
 
 function nFactorial(n) {
 
-  if (n > 0 && n < 2) {
-    return 1;
-  }
-  if (n < 0) {
-    return 0;
-  }
-  return n * nFactorial(n - 1); 
+  // if (n > 0 && n < 2) {
+  //   return 1;
+  // }
+  // if (n < 0) {
+  //   return 0;
+  // }
+  // return n * nFactorial(n - 1); 
+  let factorial = 1;
+  for (let i = n; i > 0; i--) {
 
+    factorial *= n;
+    n--;
+  }
+  return factorial;
 }
 
 function nFibonacci(n) {
